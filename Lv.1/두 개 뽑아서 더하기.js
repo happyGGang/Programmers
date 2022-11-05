@@ -3,15 +3,15 @@
 // numbers의 길이는 2 이상 100 이하입니다.
 // numbers의 모든 수는 0 이상 100 이하입니다.
 
-unction solution(numbers) {
-  const result = []
+function solution(numbers) {
+  const result = [];
 
-for (let i = 0; i < numbers.length; i++) {
-  for (let j = i + 1; j < numbers.length; j++) { 
-      result.push(numbers[i] + numbers[j]) 
+  for (let i = 0; i < numbers.length; i++) {
+    for (let j = i + 1; j < numbers.length; j++) {
+      result.push(numbers[i] + numbers[j]);
+    }
   }
-    
-} const answer = [...new Set(result)] 
+  const answer = [...new Set(result)];
 
-    return answer.sort((a, b) => a - b)
+  return answer.sort((a, b) => a - b);
 }
